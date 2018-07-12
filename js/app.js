@@ -3,8 +3,6 @@ $(function () {
 
     'use strict';
 
-
-
     /* Custimize Header Height */
 
     var header = $('.header');
