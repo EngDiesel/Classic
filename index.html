@@ -1,35 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Classic</title>
-        <meta charset="utf-8" />
-        
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-    
-        <!-- Start Navbar -->
-        <div class="container">
-            <div class="navbar">
-                <div class="brand">
-                    <h3>Classic</h3>
+
+<head>
+    <title>Classic</title>
+    <meta charset="utf-8" />
+
+    <!-- BX Slider styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- Normalize my page css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Font Awesome file -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- my Powrfull css file -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Start Navbar -->
+    <div class="container">
+        <div class="navbar">
+            <div class="brand">
+                <h3>Classic</h3>
+            </div>
+
+            <ul class="links">
+                <li class="active"><a data-value="home" href="#">Home</a></li>
+                <li><a data-value="about" href="#">About</a></li>
+                <li><a data-value="portfolio" href="#">Portfolio</a></li>
+                <li><a data-value="testimonials" href="#">Testimonials</a></li>
+                <li><a data-value="contact" href="#">Contact</a></li>
+            </ul>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+    <div class="header" id="home">
+        <div class="overlay">
+            <div class="slider">
+                <div>
+                    <h2>Welcome To <span>Classic</span></h2>
+                    <p>
+                        Cupcake ipsum dolor sit amet I love donut. Halvah wafer candy. Pie brownie I love pudding sweet cupcake. Chocolate bar fruitcake soufflé jelly muffin cotton candy.
+                    </p>
+                    <button class="my-btn">Read More</button>
                 </div>
 
-                <ul class="links">
-                    <li class="active">Home</li>
-                    <li>About</li>
-                    <li>Portfolio</li>
-                    <li>Restimonials</li>
-                    <li>Contact</li>
-                </ul>
-                <div class="clear-fix"></div>
+                <div>
+                    <h2>I'm <span>Mostafa Yasin</span></h2>
+                    <p>
+                        Cheesecake gummi bears pie cookie candy cheesecake sweet croissant. Gingerbread jelly chocolate cake candy canes tiramisu chocolate cotton candy chupa chups liquorice. Topping jelly-o croissant fruitcake marshmallow candy liquorice fruitcake.
+                    </p>
+                    <button class="my-btn">Read</button>
+                </div>
+
+                <div>
+                    <h2>Coded <span>Classic</span></h2>
+                    <p>
+                        Bonbon pudding muffin. Oat cake I love marshmallow danish pudding pudding pudding lemon drops. Cookie liquorice sweet roll I love.
+                    </p>
+                    <button class="my-btn">More</button>
+                </div>
             </div>
         </div>
-        <!-- End Navbar -->
-        
-        
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
-    </body>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start About -->
+    <div class="about" id="about">
+        <div class="container">
+            <h3 class="special-h">About</h3>
+
+            <div class="items">
+                <div class="item">
+                    <i class="fa fa-mobile-alt fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Responsive</h3>
+                        <p>I love chocolate bar cotton candy. Topping brownie jujubes apple pie biscuit marshmallow. Soufflé wafer gummies sweet oat cake gummies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-cloud fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Cloud Services</h3>
+                        <p>Chocolate brownie chocolate cake marzipan jelly beans chocolate cake topping. Candy candy canes pastry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="far fa-lightbulb fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Fresh Ideas</h3>
+                        <p>Sweet tart chupa chups gummies chocolate cake I love pastry toffee pastry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="far fa-envelope fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Attachments</h3>
+                        <p>I love cotton candy fruitcake ice cream dragée I love. Cheesecake I love powder pastry macaroon sugar plum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-film fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Video Support</h3>
+                        <p>Biscuit sugar plum oat cake chocolate bar pudding I love cookie. I love cheesecake sugar plum tiramisu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="far fa-heart fa-fw fa-4x"></i>
+
+                    <div class="info">
+                        <h3>Lovely Design</h3>
+                        <p>Lemon drops apple pie cotton candy powder tiramisu muffin apple pie icing chocolate.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+
+
+            <hr>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start portfolio -->
+    <div class="portfolio" id="portfolio">
+
+    </div>
+    <!-- End portfolio -->
+
+    <!-- Start testimonials -->
+    <div class="testimonials" id="testimonials">
+
+    </div>
+    <!-- End testimonials -->
+
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+
+    </div>
+    <!-- End Contact -->
+
+    <!-- This is JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- BX Slider Scripts -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- my Powerful app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
