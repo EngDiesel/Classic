@@ -281,6 +281,10 @@ ul {
     transition: all 0.3s ease-in-out
 }
 
+.about .members .member:hover {
+    transform: translate(-5px, 0);
+}
+
 .about .members .member:hover .overlay {
     opacity: 0.88;
 }
@@ -288,6 +292,7 @@ ul {
 
 .about .members .member .overlay h3 {
     color: aliceblue;
+    letter-spacing: 0;
     font-weight: normal;
     margin: 40% 0;
     margin-left: 5%;
