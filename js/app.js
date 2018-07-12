@@ -5,7 +5,8 @@ $(function () {
 
     /* Custimize Header Height */
 
-    var header = $('.header');
+    var header = $('.header'),
+        client = $('testimonials .active');
 
     header.height($(window).height());
 
@@ -30,6 +31,7 @@ $(function () {
         pager: false
     });
 
+
     $('.slider').each(function () {
         $(this).css('padding-top', ($(window).height() - $('.slider div').height()) / 2);
     });
@@ -42,4 +44,22 @@ $(function () {
         }, 800);
     });
 
+    // my Custom Slider for Testimonials
+    (function mySlider() {
+        $('.testimonials .clients .active').each(function () {
+            if (!$(this).is(':last-child')) {
+                $(this).delay(4000).fadeOut(1000, function () {
+                    $(this).removeClass('active').next().addClass('active').fadeIn(1000);
+                    mySlider();
+                });
+            } else {
+                $(this).delay(4000).fadeOut(1000, function () {
+                    $(this).removeClass('active');
+                    $('.testimonials .clients .client').eq(0).addClass('active').fadeIn(2000);
+                    mySlider();
+                });
+            }
+
+        });
+    }());
 });
