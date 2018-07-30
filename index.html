@@ -14,6 +14,8 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/my-grid-system.css" />
+
     <!-- my Powrfull css file -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,7 +24,7 @@
 
     <!-- Start Navbar -->
     <div class="container">
-        <div class="navbar">
+        <div class="mynavbar">
             <div class="brand">
                 <h3>Classic</h3>
             </div>
@@ -223,22 +225,202 @@
     <!-- Start portfolio -->
     <div class="portfolio" id="portfolio">
         <div class="container">
+            <h3 class="special-h">Our Projects</h3>
+            <ul class="filters controls">
+                <li class="filter" class="active" data-filter="all">All</li>
+                <li class="filter" data-filter=".mobile">Mobile</li>
+                <li class="filter" data-filter=".graphic">Graphics</li>
+                <li class="filter" data-filter=".web">Web Design</li>
+            </ul>
 
+            <div class="galery" id="mixer">
+                <div class="galery-item mix mobile">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 40
+                        </span>
+                        <h4 class="special-h">Area Block</h4>
+                    </div>
+                    <img src="img/proj1.jpg" />
+                </div>
+
+                <div class="galery-item mix web">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 39
+                        </span>
+                        <h4 class="special-h">Treey Road</h4>
+                    </div>
+                    <img src="img/proj2.jpg" />
+                </div>
+
+                <div class="galery-item mix mobile">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 14
+                        </span>
+                        <h4 class="special-h">Cloudy</h4>
+                    </div>
+                    <img src="img/proj3.jpg" />
+                </div>
+
+                <div class="galery-item mix graphic">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 33
+                        </span>
+                        <h4 class="special-h">Nice Boat</h4>
+                    </div>
+                    <img src="img/proj4.jpg" />
+                </div>
+
+                <div class="galery-item mix graphic">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 9
+                        </span>
+                        <h4 class="special-h">Texture</h4>
+                    </div>
+                    <img src="img/proj5.jpg" />
+                </div>
+
+                <div class="galery-item mix web">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 22
+                        </span>
+                        <h4 class="special-h">Lovely Dog</h4>
+                    </div>
+                    <img src="img/proj6.jpg" />
+                </div>
+
+                <div class="galery-item mix graphic">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 19
+                        </span>
+                        <h4 class="special-h">Decoration Art</h4>
+                    </div>
+                    <img src="img/proj7.jpg" />
+                </div>
+
+                <div class="galery-item mix mobile">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 36
+                        </span>
+                        <h4 class="special-h">Balloon</h4>
+                    </div>
+                    <img src="img/proj8.jpg" />
+                </div>
+
+                <div class="galery-item mix web">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 17
+                        </span>
+                        <h4 class="special-h">Forests</h4>
+                    </div>
+                    <img src="img/proj9.jpg" />
+                </div>
+
+                <div class="galery-item mix graphic">
+                    <div class="overlay">
+                        <span>
+                            <i class="far fa-heart"></i> 24
+                        </span>
+                        <h4 class="special-h">Tea Farms</h4>
+                    </div>
+                    <img src="img/proj10.jpg" />
+                </div>
+            </div>
         </div>
     </div>
     <!-- End portfolio -->
 
     <!-- Start Contact -->
     <div class="contact" id="contact">
+        <div class="container">
+            <div class="col-3">
+                <h3 class="special-h">About Classic</h3>
+                <p>Pastry danish gummies dessert chocolate bar topping cake gummies. Sugar plum gingerbread I love brownie tootsie roll sugar plum cupcake gingerbread.</p>
 
+                <div>
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-twitter-square  fa-2x"></i>
+                    <i class="fab fa-github-square  fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <h3 class="special-h">Tags</h3>
+                <span>html</span>
+                <span>art</span>
+                <span>css</span>
+                <span>photoshop</span>
+                <span>responsive</span>
+            </div>
+
+            <div class="col-3">
+                <h3 class="special-h">Recent Posts</h3>
+
+                <div class="post">
+                    <img src="img/post1.jpg" />
+                    <div class="info">
+                        <h6>How to git Rid of Ants</h6>
+                        <span>April 2018</span>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="post">
+                    <img src="img/post2.jpg" />
+                    <div class="info">
+                        <h6>Why I'm Running</h6>
+                        <span>March 2018</span>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="post">
+                    <img src="img/post3.jpg" />
+                    <div class="info">
+                        <h6>Castelia waste</h6>
+                        <span>August 2017</span>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <h3 class="special-h">Blog Categories</h3>
+
+                <div class="category">Agency</div>
+                <div class="category">Bussiness</div>
+                <div class="category">Multi-Purpos</div>
+                <div class="category">Audio</div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
     </div>
     <!-- End Contact -->
+
+    <footer>
+        <div class="container">
+            Designed With <i class="fa fa-heart"></i> by
+            <h4>Mostafa <span>Yasin</span> &copy;</h4>
+        </div>
+    </footer>
 
     <!-- This is JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- BX Slider Scripts -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- MixItUp Blugin -->
+    <script src="js/jquery.mixitup.js" type="text/javascript"></script>
+
+    <!-- Nice Scroll Blugin -->
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
 
     <!-- my Powerful app.js -->
     <script type="text/javascript" src="js/app.js"></script>

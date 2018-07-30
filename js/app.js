@@ -1,4 +1,6 @@
-/*global $, window, document, console*/
+/*global $, window, document, console, require*/
+
+
 $(function () {
 
     'use strict';
@@ -7,6 +9,8 @@ $(function () {
 
     var header = $('.header'),
         client = $('testimonials .active');
+
+    //mixitup = require('mixitup');
 
     header.height($(window).height());
 
@@ -21,7 +25,7 @@ $(function () {
 
 
     /* Toggling li.active classes */
-    $('.navbar li a').click(function () {
+    $('.mynavbar li a').click(function () {
         $(this).parent().addClass('active').siblings().removeClass('active');
     });
 
@@ -62,4 +66,21 @@ $(function () {
 
         });
     }());
+
+    // trigger mixItUp Blugin.
+    $('#mixer').mixItUp();
+
+    // handling filters click event
+    $('.portfolio .filters li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    // trigger Nice Scroll
+//    $('html').niceScroll({
+//        cursorcolor: '#e91e63',
+//        scrollspeed: 10,
+//        cursorwidth: '7px',
+//        cursorborder: 'none',
+//        zindex: '100',
+//    });
 });
